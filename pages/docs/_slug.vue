@@ -19,7 +19,7 @@
 <script>
     export default {
         async asyncData({ $content, params }){
-            const docs = await $content('mydocs', { deep: true }, params.slug).fetch()
+            const docs = await $content('docs', { deep: true }, params.slug).fetch()
             return {
                 docs
             }
